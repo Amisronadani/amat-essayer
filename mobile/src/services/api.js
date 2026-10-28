@@ -3,12 +3,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // ============================================================
 // CONFIGURATION DE L'API
-// Changez API_HOST selon votre environnement réseau :
-//   - Émulateur Android : http://10.62.230.15:4000
-//   - Appareil physique : http://<IP_DE_VOTRE_PC>:4000
-//   - Web / iOS Sim     : http://localhost:4000
+// Décommentez UNE SEULE ligne selon votre mode :
 // ============================================================
-export const API_HOST = 'http://10.243.203.15:4000';
+
+// --- EN LIGNE (Alwaysdata) ---
+export const API_HOST = 'https://amat.alwaysdata.net';
+
+// --- LOCAL (votre PC avec XAMPP) ---
+// export const API_HOST = 'http://10.243.203.15:4000';
+
 export const BASE_URL = `${API_HOST}/api`;
 
 const api = axios.create({ baseURL: BASE_URL, timeout: 10000 });

@@ -26,7 +26,10 @@
       "bundler": "metro"
     },
     "extra": {
-      "description": "Prototype pédagogique non officiel. Ne représente aucun scrutin réel."
+      "description": "Prototype pédagogique non officiel. Ne représente aucun scrutin réel.",
+      "eas": {
+        "projectId": "78b42041-e25e-46e6-b781-6b57b4835027"
+      }
     },
     "plugins": [
       "expo-font",
